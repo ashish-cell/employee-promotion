@@ -210,7 +210,7 @@ st.write('Enter the Values : ')
 global p 
 def User_Input_for_Prediction():
     st.markdown("# Enter your values ")
-    st.sidebar.markdown("# User_Input")
+    st.sidebar.markdown("# User Input")
     with st.form(key='my_form'):
     # Add a text input
         employee_id = st.text_input(label='Enter your employee_id : ')
@@ -277,7 +277,7 @@ def User_Input_for_Prediction():
 
 def Collect_Actual_Data():
     st.markdown("# Actual Data")
-    st.sidebar.markdown("# Collect_Actual_Data")
+    st.sidebar.markdown("# Actual Data")
     with st.form(key='my_form'):
     # Add a text input
         employee_id = st.text_input(label='Enter your employee_id : ')
