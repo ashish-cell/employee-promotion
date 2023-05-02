@@ -210,7 +210,7 @@ st.write('Enter the Values : ')
 global p 
 def User_Input_for_Prediction():
     st.markdown("# Enter your values ")
-    st.sidebar.markdown("# Page 1")
+    st.sidebar.markdown("# User_Input")
     with st.form(key='my_form'):
     # Add a text input
         employee_id = st.text_input(label='Enter your employee_id : ')
@@ -277,7 +277,7 @@ def User_Input_for_Prediction():
 
 def Collect_Actual_Data():
     st.markdown("# Actual Data")
-    st.sidebar.markdown("# Page 2 ")
+    st.sidebar.markdown("# Collect_Actual_Data")
     with st.form(key='my_form'):
     # Add a text input
         employee_id = st.text_input(label='Enter your employee_id : ')
@@ -300,7 +300,7 @@ def Collect_Actual_Data():
 
 def Show_Model_Performance():
     st.markdown("# Monitoring Page")
-    st.sidebar.markdown("# Page 3 ")
+    st.sidebar.markdown("# Model Monitoring ")
     st.write('Actual data : ')
     SQL_Query1 = pd.read_sql_query(
             '''select
