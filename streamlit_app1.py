@@ -208,7 +208,7 @@ st.write('Enter the Values : ')
 
 # Create a form
 global p 
-def main_page():
+def User_Input_for_Prediction():
     st.markdown("# Enter your values ")
     st.sidebar.markdown("# Page 1")
     with st.form(key='my_form'):
@@ -275,7 +275,7 @@ def main_page():
     # df = pd.DataFrame(SQL_Query, columns=['employee_id','department','region','education','gender','recruitment_channel','no_of_trainings','age','previous_year_rating','length_of_service','KPIs_met,awards_won','avg_training_score','is_promoted'])
     # print(df)
 
-def page2():
+def Collect_Actual_Data():
     st.markdown("# Actual Data")
     st.sidebar.markdown("# Page 2 ")
     with st.form(key='my_form'):
@@ -298,7 +298,7 @@ def page2():
     st.write(df)
 
 
-def page3():
+def Show_Model_Performance():
     st.markdown("# Monitoring Page")
     st.sidebar.markdown("# Page 3 ")
     st.write('Actual data : ')
@@ -352,9 +352,9 @@ def page3():
         st.write('confusion matrix : ', cm)
 
 page_names_to_funcs = {
-    "Inference": main_page,
-    "Record Actual Data": page2,
-    "Model Performance": page3,
+    "User_Input_for_Prediction": User_Input_for_Prediction,
+    "Collect_Actual_Data": Collect_Actual_Data,
+    "Show_Model_Performance": Show_Model_Performance,
 }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
